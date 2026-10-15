@@ -1,0 +1,95 @@
+{
+  "headline": "Texas and derailment accidents lead 197,608 reports from 1975 to 2026. Rear end collision (Accident type) is up 129.4% in the last 12 months (13 vs about 5.7 expected).",
+  "rows_analyzed": 197608,
+  "date_range": "1975-01-01 to 2026-07-31",
+  "metrics": [
+    {
+      "label": "Accidents analyzed",
+      "value": "197,608",
+      "explanation": "Reports left after removing duplicates and rows with no date or state."
+    },
+    {
+      "label": "Top state",
+      "value": "Texas (9.65%)",
+      "explanation": "The state with the most reported accidents, and its share of all reports."
+    },
+    {
+      "label": "Top accident type",
+      "value": "Derailment (70.38%)",
+      "explanation": "The most common kind of accident in the reports."
+    },
+    {
+      "label": "Top equipment type",
+      "value": "Freight Train (52.64%)",
+      "explanation": "The kind of train or equipment involved most often, among reports that name one."
+    },
+    {
+      "label": "Unusual months",
+      "value": "48",
+      "explanation": "Months whose count was far from what trend and season predict."
+    },
+    {
+      "label": "Categories spiking now",
+      "value": "9",
+      "explanation": "Types, equipment or causes with a clearly higher last 12 months than before."
+    }
+  ],
+  "findings": [
+    {
+      "statement": "Accidents cluster in a few states: the top three hold 24.4% of reports.",
+      "evidence": "Texas leads with 19,067 reports. The top county is Cook, IL with 8,801.",
+      "so_what": "Focus inspections and safety reviews on the leading states and counties first."
+    },
+    {
+      "statement": "Derailment is the most common accident type.",
+      "evidence": "It makes up 70.38% of reports (139,082).",
+      "so_what": "Match safety rules and training to the accident types that happen most often."
+    },
+    {
+      "statement": "Freight Train is involved most often among reports that name equipment.",
+      "evidence": "It appears in 52.64% of all reports (104,016).",
+      "so_what": "Check whether this equipment simply runs the most, then target its maintenance rules."
+    },
+    {
+      "statement": "One cause stands out above the rest.",
+      "evidence": "'T110' is the leading recorded cause (6.14% of reports, 12,137).",
+      "so_what": "Put prevention effort behind the leading causes before smaller ones."
+    },
+    {
+      "statement": "48 months were unusual compared with the normal pattern.",
+      "evidence": "The largest outlier is October 1976, a spike with 1049 reports against about 846.7 expected.",
+      "so_what": "Look into what happened in flagged months, such as weather, events or reporting changes."
+    }
+  ],
+  "method_notes": [
+    {
+      "method": "SQL-style aggregation",
+      "why": "Group-and-count tables answer which causes, places and equipment appear most.",
+      "alternative": "A regression model could weigh factors together, but counts are easier to explain and enough here."
+    },
+    {
+      "method": "Geographic analysis",
+      "why": "Counting by state and county shows where accidents cluster on a map.",
+      "alternative": "Exact coordinates would allow finer clusters, but this data only gives state and county."
+    },
+    {
+      "method": "Anomaly detection (STL plus robust z-score)",
+      "why": "STL removes trend and yearly season, so only truly odd months are flagged.",
+      "alternative": "A simple average and standard deviation is easier, but trends and seasons would cause false alarms."
+    },
+    {
+      "method": "Recent versus baseline comparison",
+      "why": "Comparing the last 12 months with the prior 3 years shows which categories are rising.",
+      "alternative": "A full forecast model could be used, but it needs more tuning and is harder to explain."
+    }
+  ],
+  "caveats": [
+    "Counts are raw totals. They are not adjusted for how many trains or miles each state or railroad runs.",
+    "Reporting rules and dollar thresholds can change over time, which can move counts without any real change in safety.",
+    "The most recent months may be incomplete because reports arrive late.",
+    "Missing equipment, cause or county values were labeled 'Not recorded' and are left out of the leading-category findings.",
+    "County names repeat across states, so counties are always paired with their state.",
+    "The cause column used was 'Primary Accident Cause Code'.",
+    "Accidents here are those reported on Form 54 and do not cover every incident type, such as some crossing events."
+  ]
+}

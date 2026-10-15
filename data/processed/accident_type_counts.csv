@@ -1,0 +1,15 @@
+accident_type,accidents,share_pct
+Derailment,139082,70.38
+Other impacts,15486,7.84
+Hwy-rail crossing,11935,6.04
+Side collision,11873,6.01
+Other (describe in narrative),4731,2.39
+Obstruction,3930,1.99
+Fire/violent rupture,3184,1.61
+Raking collision,2783,1.41
+Rear end collision,2573,1.3
+Head on collision,1324,0.67
+Broken train collision,541,0.27
+Explosion-detonation,86,0.04
+RR grade crossing,79,0.04
+Not recorded,1,0.0

@@ -1,0 +1,51 @@
+state_abbr,state_name,accidents,share_pct
+TX,Texas,19067,9.65
+IL,Illinois,18926,9.58
+CA,California,10168,5.15
+PA,Pennsylvania,8896,4.5
+OH,Ohio,7904,4.0
+IA,Iowa,6768,3.42
+NY,New York,6569,3.32
+MN,Minnesota,6096,3.08
+MO,Missouri,6018,3.05
+IN,Indiana,5821,2.95
+KS,Kansas,5386,2.73
+NE,Nebraska,5325,2.69
+GA,Georgia,5305,2.68
+LA,Louisiana,5163,2.61
+TN,Tennessee,4609,2.33
+WI,Wisconsin,4329,2.19
+AL,Alabama,4261,2.16
+KY,Kentucky,4134,2.09
+MI,Michigan,4089,2.07
+WA,Washington,4034,2.04
+AR,Arkansas,3908,1.98
+FL,Florida,3587,1.82
+OK,Oklahoma,3468,1.75
+VA,Virginia,3324,1.68
+NJ,New Jersey,3060,1.55
+MS,Mississippi,2926,1.48
+CO,Colorado,2803,1.42
+OR,Oregon,2778,1.41
+NC,North Carolina,2631,1.33
+WV,West Virginia,2597,1.31
+WY,Wyoming,2538,1.28
+MT,Montana,2415,1.22
+MD,Maryland,2125,1.08
+ND,North Dakota,1654,0.84
+AZ,Arizona,1630,0.82
+SC,South Carolina,1623,0.82
+ID,Idaho,1616,0.82
+UT,Utah,1550,0.78
+MA,Massachusetts,1438,0.73
+NM,New Mexico,1325,0.67
+SD,South Dakota,1293,0.65
+CT,Connecticut,1215,0.61
+NV,Nevada,783,0.4
+ME,Maine,770,0.39
+DC,District Of Columbia,409,0.21
+DE,Delaware,399,0.2
+VT,Vermont,300,0.15
+AK,Alaska,277,0.14
+NH,New Hampshire,188,0.1
+RI,Rhode Island,110,0.06
